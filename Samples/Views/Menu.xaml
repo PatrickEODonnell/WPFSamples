@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="Samples.Views.Menu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Samples.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Button Margin="5" Grid.Column="0" Content="Hello World"/>
+        <Button Margin="5" Grid.Column="1" Content="Log In"/>
+        <Button Margin="5" Grid.Column="2" Content="Address Form"/>
+        <Button Margin="5" Grid.Column="3" Content="Shopping Cart"/>
+        <Button Margin="5" Grid.Column="4" Content="Order Form"/>
+        <Button Margin="5" Grid.Column="5" Content="Directory View"/>
+    </Grid>
+</UserControl>

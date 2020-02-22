@@ -1,0 +1,25 @@
+﻿<Window x:Class="Samples.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Samples"
+        xmlns:views="clr-namespace:Samples.Views"
+        mc:Ignorable="d"
+        Title="UI Samples" Height="450" Width="800">
+    <Border Padding="10" >
+
+        <Border Padding="10"  BorderBrush="#eee" BorderThickness="2">
+            <DockPanel LastChildFill="True">
+                <ContentControl DockPanel.Dock="Top" >
+                    <views:Menu />
+                </ContentControl>
+                <StackPanel VerticalAlignment="Center">
+                    <ContentControl Name="MainContentView" Padding="5" HorizontalAlignment="Center"  >
+                        <views:HelloWorld VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                    </ContentControl>
+                </StackPanel>
+            </DockPanel>
+        </Border>
+    </Border>
+</Window>
