@@ -13,22 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Samples
+namespace Samples.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Welcome.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Welcome : UserControl
     {
-        public MainWindow()
+        public Welcome()
         {
             InitializeComponent();
-        }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            var initialView = new Views.Welcome();
-            MainContentView.Content = initialView;
         }
     }
 }

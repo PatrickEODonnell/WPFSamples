@@ -15,7 +15,7 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <Button Margin="5" Grid.Column="0" Content="Hello World"/>
+        <Button Name="btnHelloWorld" Margin="5" Grid.Column="0" Content="Hello World" Click="BtnHelloWorld_Click" />
         <Button Margin="5" Grid.Column="1" Content="Log In"/>
         <Button Margin="5" Grid.Column="2" Content="Address Form"/>
         <Button Margin="5" Grid.Column="3" Content="Shopping Cart"/>

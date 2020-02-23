@@ -24,5 +24,39 @@ namespace Samples.Views
         {
             InitializeComponent();
         }
+
+        private void BtnHelloWorld_Click(object sender, RoutedEventArgs e)
+        {
+            var buttonVal = ((Button)sender).Content.ToString();
+            SetContentControl(buttonVal);
+
+        }
+
+        private void SetContentControl(string buttonVal)
+        {
+            MainWindow mainWindow = GetMainWindow();
+
+            switch (buttonVal)
+            {
+                case "Hello World":
+                    mainWindow.MainContentView.Content = new HelloWorld();
+                    break;
+                default:
+                    Console.WriteLine("Default case");
+                    break;
+            }
+
+        }
+
+        private MainWindow GetMainWindow()
+        {
+            Grid grid = (Grid)this.Content;
+            Menu menu = (Menu)grid.Parent;
+            ContentControl cc = (ContentControl)menu.Parent;
+            DockPanel dockPanel = (DockPanel)cc.Parent;
+            Border border = (Border)dockPanel.Parent;
+            MainWindow mainWindow = (MainWindow)border.Parent;
+            return mainWindow;
+        }
     }
 }

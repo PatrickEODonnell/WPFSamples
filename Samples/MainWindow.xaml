@@ -6,20 +6,19 @@
         xmlns:local="clr-namespace:Samples"
         xmlns:views="clr-namespace:Samples.Views"
         mc:Ignorable="d"
+        Loaded="Window_Loaded"
         Title="UI Samples" Height="450" Width="800">
-    <Border Padding="10" >
 
-        <Border Padding="10"  BorderBrush="#eee" BorderThickness="2">
+        <Border Margin="10" Padding="10"  BorderBrush="#eee" BorderThickness="2">
             <DockPanel LastChildFill="True">
                 <ContentControl DockPanel.Dock="Top" >
                     <views:Menu />
                 </ContentControl>
                 <StackPanel VerticalAlignment="Center">
                     <ContentControl Name="MainContentView" Padding="5" HorizontalAlignment="Center"  >
-                        <views:HelloWorld VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                        <!--<views:HelloWorld VerticalAlignment="Center" HorizontalAlignment="Left"/>-->
                     </ContentControl>
                 </StackPanel>
             </DockPanel>
         </Border>
-    </Border>
 </Window>

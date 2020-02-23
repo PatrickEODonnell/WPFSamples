@@ -61,9 +61,6 @@
     <Compile Include="Views\Menu.xaml.cs">
       <DependentUpon>Menu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Welcome.xaml.cs">
-      <DependentUpon>Welcome.xaml</DependentUpon>
-    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -81,10 +78,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Menu.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Welcome.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
